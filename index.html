@@ -1,1 +1,120 @@
-<!DOCTYPE html><html lang='ro'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Leo OS</title><style>body{margin:0;font-family:Arial;background:#0b1220;color:#fff}header{padding:18px;background:#1565c0;font-size:24px}nav{display:flex;background:#111827}nav button{flex:1;padding:14px;background:none;border:0;color:#ddd}.active{background:#1565c0!important}.page{display:none;padding:16px}.page.active{display:block}.card{background:#182235;border-radius:14px;padding:16px;margin-bottom:14px}</style></head><body><header>Leo OS</header><nav><button class='active' onclick="s('home',this)">Acasă</button><button onclick="s('plan',this)">Plan</button><button onclick="s('log',this)">Log</button></nav><div id='home' class='page active'><div class='card'><h2>S5</h2><p>Plan: 5K+strides, Long Run 7K, Z2.</p></div></div><div id='plan' class='page'><div class='card'><ul><li>S5-S7 Construcție</li><li>S8 Deload</li><li>S9-S11 Tempo</li><li>S12 Race</li></ul></div></div><div id='log' class='page'><div class='card'><p>01.06 5K 7:27<br>03.06 5K 8:37<br>05.06 5K 7:39<br>17.06 7.09K 7:29<br>19.06 6.02K 6:36<br>22.06 4.01K<br>24.06 4K<br>26.06 4.02K 6:39<br>29.06 6.05K 6:29</p></div></div><script>function s(i,b){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(i).classList.add('active');document.querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active');}</script></body></html>
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leo OS v0.2</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#0b1220;color:#fff}
+header{background:#1565c0;padding:18px;font-size:24px;font-weight:bold}
+nav{display:flex;overflow:auto;background:#101826;position:sticky;top:0}
+nav button{flex:1;border:0;background:none;color:#ddd;padding:14px}
+nav button.active{background:#1565c0;color:#fff}
+.page{display:none;padding:16px}
+.page.active{display:block}
+.card{background:#182235;border-radius:14px;padding:16px;margin-bottom:14px}
+h2{margin:0 0 10px;color:#7ec3ff}
+table{width:100%;border-collapse:collapse;font-size:13px}
+td,th{padding:6px;border-bottom:1px solid #2d3c56;text-align:left}
+.badge{display:inline-block;background:#1565c0;padding:4px 10px;border-radius:20px}
+</style>
+</head>
+<body>
+
+<header>Leo OS</header>
+
+<nav>
+<button class="active" onclick="showPage('home',this)">Acasă</button>
+<button onclick="showPage('plan',this)">Plan</button>
+<button onclick="showPage('runs',this)">Alergări</button>
+<button onclick="showPage('coach',this)">Coach</button>
+</nav>
+
+<div id="home" class="page active">
+<div class="card">
+<h2>Status</h2>
+<p><span class="badge">S5 FINALIZATĂ ✓</span></p>
+<p><b>Următor antrenament:</b><br>07.07 • 6 km Easy • HR ≤145 bpm • Cadență 165</p>
+</div>
+
+<div class="card">
+<h2>Obiective</h2>
+<ul>
+<li>10K - 24 august</li>
+<li>Țintă ~60 minute</li>
+<li>VO₂Max 49-51</li>
+<li>HR bază 138-145 bpm</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Flotări</h2>
+<p>🔥 33+ zile consecutive</p>
+<p>Program actual: 3×14</p>
+</div>
+</div>
+
+<div id="plan" class="page">
+<div class="card">
+<h2>Plan 12 săptămâni</h2>
+<table>
+<tr><th>Fază</th><th>Status</th></tr>
+<tr><td>S1 Reactivare</td><td>✓</td></tr>
+<tr><td>S2 Reactivare</td><td>✓</td></tr>
+<tr><td>S3 Reactivare</td><td>✓</td></tr>
+<tr><td>S4 Deload</td><td>✓</td></tr>
+<tr><td><b>S5 Construcție</b></td><td><b>✓</b></td></tr>
+<tr><td>S6 Construcție</td><td>Următoarea</td></tr>
+<tr><td>S7 Construcție</td><td>-</td></tr>
+<tr><td>S8 Deload + Test HR Max</td><td>-</td></tr>
+<tr><td>S9-S11 Consolidare</td><td>-</td></tr>
+<tr><td>S12 Race Week</td><td>-</td></tr>
+</table>
+</div>
+</div>
+
+<div id="runs" class="page">
+<div class="card">
+<h2>Istoric alergări</h2>
+<table>
+<tr><th>Data</th><th>Km</th><th>Pace</th></tr>
+<tr><td>01.06</td><td>5.00</td><td>7:27</td></tr>
+<tr><td>03.06</td><td>5.00</td><td>8:37</td></tr>
+<tr><td>05.06</td><td>5.00</td><td>7:39</td></tr>
+<tr><td>17.06</td><td>7.09</td><td>7:29</td></tr>
+<tr><td>19.06</td><td>6.02</td><td>6:36</td></tr>
+<tr><td>22.06</td><td>4.01</td><td>7:44</td></tr>
+<tr><td>24.06</td><td>4.00</td><td>8:23</td></tr>
+<tr><td>26.06</td><td>4.02</td><td>6:39</td></tr>
+<tr><td>29.06</td><td>6.05</td><td>6:31</td></tr>
+<tr><td>01.07</td><td>5.00</td><td>7:19</td></tr>
+<tr><td>04.07</td><td>7.05</td><td>7:14</td></tr>
+</table>
+</div>
+</div>
+
+<div id="coach" class="page">
+<div class="card">
+<h2>Concluzii S5</h2>
+<ul>
+<li>HR bază confirmat: 138-145 bpm</li>
+<li>Long Run reușit</li>
+<li>Strides introduse cu succes</li>
+<li>VO₂Max stabil</li>
+<li>Test HR Max programat în S8</li>
+</ul>
+</div>
+</div>
+
+<script>
+function showPage(id,b){
+document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));
+b.classList.add('active');
+}
+</script>
+
+</body>
+</html>
