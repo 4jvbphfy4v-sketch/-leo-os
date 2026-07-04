@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "currentWeek": "S5",
+  "currentPhase": "Construcție",
+  "raceDay": "2026-08-24",
+  "goal": {
+    "distance": "10K",
+    "targetTime": "60:00",
+    "targetPace": "6:00/km"
+  },
+  "rules": {
+    "hrBase": "138-145",
+    "hrSuccess": "138-150",
+    "cadence": 165,
+    "bodyBatteryLimit": 60,
+    "hrMax": 182
+  },
+  "pushups": {
+    "S1": "3x10",
+    "S2": "3x10",
+    "S3": "3x12",
+    "S4": "3x12",
+    "S5": "3x14",
+    "S6": "3x14",
+    "S7": "3x16",
+    "S8": "3x16",
+    "S9": "3x18",
+    "S10": "3x18",
+    "S11": "3x20",
+    "S12": "3x20"
+  },
+  "weeks": [
+    {
+      "id": "S5",
+      "status": "completed"
+    },
+    {
+      "id": "S6",
+      "status": "current"
+    },
+    {
+      "id": "S7",
+      "status": "planned"
+    },
+    {
+      "id": "S8",
+      "status": "planned",
+      "milestone": "Test HR Max"
+    },
+    {
+      "id": "S9",
+      "status": "planned"
+    },
+    {
+      "id": "S10",
+      "status": "planned"
+    },
+    {
+      "id": "S11",
+      "status": "planned"
+    },
+    {
+      "id": "S12",
+      "status": "race"
+    }
+  ]
+}
