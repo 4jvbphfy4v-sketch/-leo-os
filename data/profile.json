@@ -1,0 +1,24 @@
+{
+  "name": "Leo",
+  "age": 46,
+  "height": 180,
+  "weight": 77.8,
+  "city": "Cluj-Napoca",
+  "currentWeek": "S6",
+  "vo2max": 43.8,
+  "fitnessAge": 41,
+  "restingHR": 53,
+  "maxHR": 182,
+  "baseHRMin": 138,
+  "baseHRMax": 145,
+  "targetCadence": 165,
+  "race": {
+    "date": "2026-08-24",
+    "distance": "10K",
+    "targetTime": "60:00",
+    "targetPace": "6:00/km"
+  },
+  "streaks": {
+    "pushups": 33
+  }
+}
