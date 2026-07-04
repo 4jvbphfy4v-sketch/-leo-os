@@ -1,0 +1,28 @@
+{
+  "currentProgram": "Standard",
+  "currentWeek": "S6",
+  "streak": 33,
+  "today": {
+    "pushups": "3x14",
+    "completed": false
+  },
+  "progression": {
+    "S1": "3x10",
+    "S2": "3x10",
+    "S3": "3x12",
+    "S4": "3x12",
+    "S5": "3x14",
+    "S6": "3x14",
+    "S7": "3x16",
+    "S8": "3x16",
+    "S9": "3x18",
+    "S10": "3x18",
+    "S11": "3x20",
+    "S12": "3x20"
+  },
+  "futureModules": [
+    "TRX",
+    "Dumbbells",
+    "Gym"
+  ]
+}
